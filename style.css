@@ -1,108 +1,161 @@
 body {
   margin: 0;
   padding: 0;
-}
-nav {
-  width: 100%;
-  /* height: 100px; */
-  background-color: #333;
-  padding: 0 20px;
   box-sizing: border-box;
-  line-height: 50px;
+  font-family: "Press Start 2P";
 }
 
-.logo {
-  display: inline-block;
-  color: white;
+nav {
+  display: flex;
+  justify-content: space-between;
+  font-size: 40px;
+  background-color: black;
+}
+
+#logo {
+  margin-left: 50px;
+  width: 20%;
+  height: 20%;
+  object-fit: cover;
+}
+
+#logo:hover {
+  margin-left: 100px;
+  content: url(assets/img/thumb-1920-1105889.jpg);
+  object-fit: cover;
+  border-radius: 100%;
+  cursor: pointer;
+  width: 10%;
+  height: 5%;
 }
 
 .list-nav {
-  display: inline-block;
-  float: right;
-  list-style: none;
-}
-
-.list-nav li {
-  display: inline-block;
-  margin-left: 30px;
-  vertical-align: middle;
+  display: flex;
+  padding: 50px;
+  gap: 20px;
+  list-style-type: none;
   color: white;
-  font-size: 16px;
-  cursor: pointer;
 }
 
-.list-nav li:hover {
-  color: #ff5f26;
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: burlywood;
+}
+
+.main-wrap {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background-image: url(assets/img/anime-7713786_1280.jpg);
+  background-position: top;
+  background-size: cover;
 }
 
 .koda {
-  font-weight: bolder;
-  font-size: 50px;
-  display: inline-block;
-  margin-left: 350px;
+  margin: 300px 0 0 0;
+  padding-bottom: 50px;
+  background: rgba(255, 255, 255, 0.6);
+  height: 30%;
+  width: 30%;
+  gap: 50px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
 }
 
-.lorem {
-  text-align: center;
+.koda:hover {
+  transform: scale(1.5);
+  box-shadow: 16px 16px 40px rgb(249, 248, 248); /* shadow makin kuat */
+}
+
+.koda h1,
+h2,
+p {
+  display: flex;
+  justify-content: center;
+}
+
+.koda h1 {
+  margin-top: 50px;
   font-size: 40px;
+  color: black;
 }
 
-@media screen and (max-width: 768px) {
-  h1 {
-    margin: 0;
-  }
-  .logo {
-    display: block;
-    text-align: center;
-    margin-bottom: 10px;
-    margin-top: 0;
-    font-size: 10px;
-  }
+.koda h2 img {
+  width: 50%;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 10px;
+}
 
-  .list-nav {
-    float: none;
-    display: block;
-    text-align: center;
-    margin-right: 40px;
-  }
+.kotak1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url(assets/img/freiren.png);
+  background-position: top;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  font-size: 50px;
+}
 
-  .list-nav li {
-    display: block;
-    margin: 10px 0;
-    color: #ff5f26;
+@media (max-width: 768px) {
+  #logo:hover {
+    margin-left: 70px;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
     font-size: 20px;
   }
-  .list-nav li:hover {
-    color: #ffffff;
-    background-color: black;
-    margin-left: 275px;
-    width: 100px;
-  }
-  .koda {
-    font-size: 40px;
-    margin-left: 240px;
-  }
-  .lorem {
-    font-size: 30px;
-  }
-}
-@media screen and (max-width: 660px) {
-  .logo {
-    font-size: 30px;
-    padding-top: 20px;
-  }
-  .list-nav li:hover {
-    color: #ffffff;
-    background-color: black;
-    margin-left: 200px;
-    width: 100px;
+  .list-nav {
+    display: flex;
+    flex-direction: column;
   }
 
-  .list-nav li {
-    font-size: 40px;
+  .main-wrap {
+    flex-direction: column; /* ubah jadi column */
+    align-items: center; /* tengah vertikal tiap item */
   }
+
   .koda {
-    font-size: 40px;
-    margin-left: 120px;
+    width: 40%; /* sesuaikan lebar tiap gambar di HP */
+    margin-top: 10px; /* jarak bawah antar gambar */
+    height: 100px;
+  }
+  .koda:hover {
+    transform: scale(1.2);
+    box-shadow: 16px 16px 40px rgb(249, 248, 248); /* shadow makin kuat */
+  }
+
+  .koda h1 {
+    text-align: cent;
+    font-size: 20px;
+    padding: 2px;
+    margin: 0 0 5px 0;
+  }
+  .koda h2 img {
+    width: 40%; /* biar gambar ikut lebar container */
+    height: 40%;
+    padding-bottom: 10px;
+  }
+  .kotak1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 50px;
+    height: 30vh;
+    color: #ffffff;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
   }
 }

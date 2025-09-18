@@ -1,12 +1,11 @@
-# Koda B4 CSS 2
-
-Project Responsive Navbar.
-
 ## Cara Pakai
 
-1. Buka `index.html` di browser.
+1. Clone atau download repository ini
+2. Pastikan semua gambar ada di folder `assets/img`
+3. Buka file `index.html` di browser
+4. Untuk styling, edit file `style.css`
 
-## Isi Halaman
+## Catatan
 
-- Navbar dengan logo dan menu (Home, About, Contact).
-- Konten utama berisi judul dan paragraf.
+- Background halaman pertama dan kedua diatur via CSS
+- Gunakan browser modern untuk pengalaman terbaik
