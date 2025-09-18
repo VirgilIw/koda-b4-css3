@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  width: 100%;
+  /* height: 100px; */
+  background-color: #333;
+  padding: 0 20px;
+  box-sizing: border-box;
+  line-height: 50px;
+}
+
+.logo {
+  display: inline-block;
+  color: white;
+}
+
+.list-nav {
+  display: inline-block;
+  float: right;
+  list-style: none;
+}
+
+.list-nav li {
+  display: inline-block;
+  margin-left: 30px;
+  vertical-align: middle;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.list-nav li:hover {
+  color: #ff5f26;
+}
+
+.koda {
+  font-weight: bolder;
+  font-size: 50px;
+  display: inline-block;
+  margin-left: 350px;
+}
+
+.lorem {
+  text-align: center;
+  font-size: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    margin: 0;
+  }
+  .logo {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 0;
+    font-size: 10px;
+  }
+
+  .list-nav {
+    float: none;
+    display: block;
+    text-align: center;
+    margin-right: 40px;
+  }
+
+  .list-nav li {
+    display: block;
+    margin: 10px 0;
+    color: #ff5f26;
+    font-size: 20px;
+  }
+  .list-nav li:hover {
+    color: #ffffff;
+    background-color: black;
+    margin-left: 275px;
+    width: 100px;
+  }
+  .koda {
+    font-size: 40px;
+    margin-left: 240px;
+  }
+  .lorem {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .logo {
+    font-size: 30px;
+    padding-top: 20px;
+  }
+  .list-nav li:hover {
+    color: #ffffff;
+    background-color: black;
+    margin-left: 200px;
+    width: 100px;
+  }
+
+  .list-nav li {
+    font-size: 40px;
+  }
+  .koda {
+    font-size: 40px;
+    margin-left: 120px;
+  }
+}
