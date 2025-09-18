@@ -9,3 +9,6 @@
 
 - Background halaman pertama dan kedua diatur via CSS
 - Gunakan browser modern untuk pengalaman terbaik
+
+![foto ss](/assets/img/ss1.png)
+![foto ss](/assets/img/ss2.png)
