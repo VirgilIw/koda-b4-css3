@@ -127,6 +127,7 @@ p {
   }
 
   .koda {
+    text-align: center;
     width: 40%; /* sesuaikan lebar tiap gambar di HP */
     margin-top: 10px; /* jarak bawah antar gambar */
     height: 100px;
@@ -143,8 +144,8 @@ p {
     margin: 0 0 5px 0;
   }
   .koda h2 img {
-    width: 40%; /* biar gambar ikut lebar container */
-    height: 40%;
+    width: 100%; /* biar gambar ikut lebar container */
+    height: 100%;
     padding-bottom: 10px;
   }
   .kotak1 {
